@@ -9,7 +9,6 @@ The project addresses two questions:
 
 The central lesson is that fitting historical data is not the same as forecasting unseen returns, and better predictive metrics do not necessarily translate into better investment performance.
 
-> **Repository note:** The GitHub repository initially contained only a placeholder README. This document describes the project files and workflow developed locally. Add the R scripts, class workbook, Quarto source, and any outputs that you intend to share before expecting a fresh clone to reproduce the complete analysis.
 
 ## 1. The classroom portfolio experiment
 
@@ -217,11 +216,3 @@ quarto render Blog_Post_9_Predicting_Stock_Returns.qmd
 ```
 
 Use the generated CSV files to populate result tables in the post. Do not enter model metrics before they have been generated and checked.
-
-## 9. Interpretation and takeaway
-
-The classroom portfolio exercise shows a higher average ending value for the indicator-based portfolios, but the paired uncertainty estimates do not provide strong two-sided evidence of a systematic advantage. The XGBoost exercise then tests whether gradient boosting can extract more useful information from historical market data.
-
-The improved workflow makes a substantive attempt through better feature construction, purged chronological validation, hyperparameter tuning, and a transaction-cost-aware backtest. Its success must be judged on the held-out period—not on training or validation performance. Even if the improved model fails to beat the original model or SPY, that is a meaningful finding: it illustrates how difficult it is to turn noisy financial data into a durable investment signal.
-
-This project is an educational analysis, not investment advice.
